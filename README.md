@@ -50,4 +50,54 @@ There are no specific environment variables to set up for the mobile part, but e
     npx expo start
     ```
 
-***Happy coding!*** 🚀
+# Working with Prisma
+
+prisma is a modern database toolkit that makes it easy to work with databases in your application. It provides an ORM (Object-Relational Mapping) layer that allows you to interact with your database using a type-safe API.
+
+## Prisma Schema
+
+The Prisma schema is a declarative file that defines your database schema. It describes the data model, relationships, and constraints of your database.
+
+The schema is defined in the `schema.prisma` file in the `backend` directory. It uses Prisma's own schema language to define the data model.
+
+## Updating the Schema
+
+To update the schema in Prisma, follow these steps:
+
+1. Open the `schema.prisma` file in the `backend` directory.
+2. Make the necessary changes to the schema.
+3. Save the file.
+
+## Formatting the Schema
+
+To format the schema in Prisma, you can use the `prisma format` command. Run the following command in the terminal:
+
+```sh
+npx prisma format
+```
+
+This command will automatically format the schema file according to Prisma's formatting rules.
+
+## Prisma Client
+
+The Prisma client is an auto-generated library that provides a type-safe and convenient way to interact with your database. It allows you to perform CRUD operations and execute complex queries.
+
+To generate the Prisma client, run the following command in the terminal:
+
+```sh
+npx prisma generate
+```
+
+This command will generate the Prisma client based on your schema definition.
+
+## Syncing with the Database
+
+To sync your Prisma schema with the database, use the `prisma db push` command. This command will apply any pending migrations and update the database schema accordingly.
+
+Run the following command in the terminal:
+
+```sh
+npx prisma db push
+```
+
+## Happy coding! 🚀
