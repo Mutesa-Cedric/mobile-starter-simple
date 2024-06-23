@@ -16,5 +16,7 @@ const validateUser = (data) => {
     return user.data;
 }
 
-module.exports = validateUser;
+module.exports ={
+    validateUser
+}
 
