@@ -14,4 +14,6 @@ const validateProduct = (data) => {
     return product.data;
 };
 
-module.exports = validateProduct;
+module.exports = {
+    validateProduct
+}
